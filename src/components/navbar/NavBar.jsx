@@ -5,14 +5,7 @@ import Search from '../../svg/search.svg?react';
 
 
 const NavBar = () => {
-
-  const headers = [
-    'Name of dialysis center',
-    'Dialysis Center ID',
-    'Address',
-    'Role'
-  ];
-
+  
   const linkHoverClasses = `
   from-white to-gray-300 text-[#2b477d]
 `;
