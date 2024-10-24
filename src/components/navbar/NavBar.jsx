@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import AccountSetting from '../accounts/AccountSetting';
 import Search from '../../svg/search.svg?react';
-import DialysisCenterTable from '../accounts/DialysisCenterTable ';
 
 
 const NavBar = () => {
@@ -45,8 +44,8 @@ const NavBar = () => {
       defaultHover: true,
     },
     {
-      text: 'Patient Aministration',
-      link: 'http://localhost:5173/PatientAdmini/',
+      text: 'Customer Service',
+      link: '#',
       subMenuFlag: false,
       subMenuItem: [],
       defaultHover: false,
@@ -125,7 +124,6 @@ const NavBar = () => {
         </div>
       </div>
       <AccountSetting />
-      <DialysisCenterTable />
     </div>
   );
 };
