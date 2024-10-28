@@ -38,21 +38,21 @@ const NavBar = () => {
   const navbarItem = [
     {
       text: 'Clinical',
-      link: '#',
+      link: '/clinical',
       subMenuFlag: false,
       subMenuItem: [],
       defaultHover: true,
     },
     {
       text: 'Customer Service',
-      link: '#',
+      link: '/app',
       subMenuFlag: false,
       subMenuItem: [],
       defaultHover: false,
     },
     {
       text: 'Adequest',
-      link: '#',
+      link: '/adequest',
       subMenuFlag: false,
       subMenuItem: [],
     },
@@ -71,7 +71,7 @@ const NavBar = () => {
       subMenuItem: [
         {
           text: 'User',
-          link: '#',
+          link: '/user',
           subMenuFlag: false,
         },
         {
@@ -89,8 +89,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="grid justify-center">
-      <div className="flex justify-center m-2 my-2 mt-8 w-[1250px] gap-1 text-white text-sm bg-primary-navBarBgColor">
+      <div className="flex justify-center mt-8 w-[1250px] gap-1 text-white text-sm bg-primary-navBarBgColor">
         {navbarItem.map((item, index) => (
           <div
             key={index}
@@ -122,8 +121,7 @@ const NavBar = () => {
           <Search className="size-6 text-white" />
           <span>Help</span>
         </div>
-      </div>
-      <AccountSetting />
+      {/* <AccountSetting /> */}
     </div>
   );
 };

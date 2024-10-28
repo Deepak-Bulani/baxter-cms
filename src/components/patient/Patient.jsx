@@ -1,27 +1,24 @@
 import React from 'react';
 import { useState } from 'react';
-import {ADD_USER_TABS} from '../../constants/mockData.js';
-import UserInfo from './UserInfo.jsx';
-import PatientAccess from './PatientAccess.jsx';
-import SiteAccess from './SiteAccess.jsx';
+import {PATIENT_TABS} from '../../constants/mockData.js';
+import AllPatientList from "../../components/patient/AllPatientList.jsx"
+import MyPatientList from "../../components/patient/MyPatientList.jsx"
 
-const AddUser = () => {
-  const [activeTab, setActiveTab] = useState("User Information");
+const Patient = () => {
+  const [activeTab, setActiveTab] = useState("All Patient");
   const renderComponent = () => {
     switch (activeTab) {
-      case 'User Information':
-        return <UserInfo />;
-      case 'Site Access':
-        return <SiteAccess />;
-      case 'Patient Access':
-        return <PatientAccess />;
+      case 'All Patient':
+        return <AllPatientList />;
+      case 'My Patient':
+        return <MyPatientList />;
       default:
-        return <UserInfo />;
+        return <AllPatientList />;
     }
   };
   return (
     <div className="mt-4 border border-[#999] rounded-b-[3px]">
-      {ADD_USER_TABS.map((item, index) => (
+      {PATIENT_TABS.map((item, index) => (
         <button
           key={index}
           className={`py-2 px-4 border-x border-t rounded-t-lg mt-4 ml-2 mr-2 ${
@@ -40,4 +37,4 @@ const AddUser = () => {
   );
 };
 
-export default AddUser;
+export default Patient;

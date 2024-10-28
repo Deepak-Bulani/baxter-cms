@@ -1,4 +1,5 @@
 export const DEVICE_PROGRAM_TAPS = ["Time", "Volume", "Tidal", "Settings"];
+export const PATIENT_TABS = ["All Patient", "My Patient"];
 export const ADD_USER_TABS = ["User Information", "Site Access", "Patient Access"];
 export const THERAPY_MODES = ["Low-Fill", "High-Fill"];
 export const SMART_DWELLS = [
