@@ -38,19 +38,18 @@ const TableClinical = props => {
 
   return (
     <div
-      className="border border-[#999] border-b-2 border-b-[#6C8CB3] rounded-b-[3px]
+      className="border border-primary-borderColorNew border-b-2 border-primary-boxHeaderColor rounded-b-[3px]
     "
-      style={{width: '1200px', margin: '0 auto'}}
     >
       <Table
         columns={columns}
         data={currentData}
         tableLayout={'fixed'}
         className="min-w-full"
-        rowClassName="bg-white border-t border-[#999]"
+        rowClassName="bg-white border-t border-primary-borderColorNew"
       />
 
-      <div className="flex justify-between items-center px-2 py-1 bg-[#6C8CB3] text-white text-[12px]">
+      <div className="flex justify-between items-center px-2 py-1  bg-primary-boxHeaderColor text-white text-[12px]">
         <span>
           Files {indexOfFirstRow + 1} to {Math.min(indexOfLastRow, data.length)} of {data.length}
         </span>

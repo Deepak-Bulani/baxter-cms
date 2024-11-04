@@ -17,7 +17,7 @@ const Patient = () => {
     }
   };
   return (
-    <div className="mt-4 border border-[#999] rounded-b-[3px]">
+    <div className="mt-4 border border-primary-borderColorNewrounded-b-[3px]">
       {PATIENT_TABS.map((item, index) => (
         <button
           key={index}
@@ -31,7 +31,7 @@ const Patient = () => {
           {item}
         </button>
       ))}
-      <div className="bg-[#6c8cb3] min-h-[20px] text-[12px] text-white"></div>
+      <div className="bg-primary-boxHeaderColor min-h-[20px] text-[12px] text-white"></div>
       <div className="m-4">{renderComponent()}</div>
     </div>
   );

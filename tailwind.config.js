@@ -17,6 +17,8 @@ module.exports = {
           navBarItemBgColor:"#617598",
           blurColor: '#757575',
           buttonColor: '#6f48eb',
+          borderColorNew:"#999",
+          boxHeaderColor:"#6C8CB3"
         },
       },
     },
