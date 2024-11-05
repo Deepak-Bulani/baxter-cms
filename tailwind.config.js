@@ -18,7 +18,8 @@ module.exports = {
           blurColor: '#757575',
           buttonColor: '#6f48eb',
           borderColorNew:"#999",
-          boxHeaderColor:"#6C8CB3"
+          boxHeaderColor:"#6C8CB3",
+          activeTabBorder:"#042f2e"
         },
       },
     },

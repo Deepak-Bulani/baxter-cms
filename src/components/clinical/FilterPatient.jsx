@@ -25,6 +25,7 @@ const FilterPatient = () => {
           name="optionSelect"
           onChange={handleChange}
           required
+          
         />
         <Option
           label="Treatment Progress"
