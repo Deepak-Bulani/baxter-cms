@@ -28,12 +28,6 @@ const Option = ({
         disabled={disabled}
         required={required}
         className="w-[240px] h-[26px] border border-gray-300 text-[12px] font-sans px-1"
-        style={{
-          border: '1px solid #c5c5c5',
-          fontFamily: 'Arial, Helvetica, sans-serif',
-          fontSize: '12px',
-          boxSizing: 'border-box',
-        }}
       >
         {items.map((item, index) => (
           <option key={index} value={item.value}>

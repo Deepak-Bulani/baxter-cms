@@ -11,8 +11,8 @@ const FilterPatient = () => {
     setSelectedValue(event.target.value);
   };
   return (
-    <div className="mt-4 border border-[#999] border-b-5 border-b-[#6C8CB3] rounded-b-[3px] mb-5">
-      <div className="bg-[#6c8cb3] min-h-[10px] leading-[25px] text-[15px] font-bold text-white p-2">
+    <div className="mt-4 borderborder-primary-borderColorNew border-b-5  border-primary-boxHeaderColor rounded-b-[3px] mb-5">
+      <div className="bg-primary-boxHeaderColor min-h-[10px] leading-[25px] text-[15px] font-bold text-white p-2">
         Filter Patient
       </div>
 
@@ -25,6 +25,7 @@ const FilterPatient = () => {
           name="optionSelect"
           onChange={handleChange}
           required
+          
         />
         <Option
           label="Treatment Progress"
