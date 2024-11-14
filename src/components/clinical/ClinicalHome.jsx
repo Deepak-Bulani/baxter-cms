@@ -1,5 +1,4 @@
 import React from 'react';
-
 import AllPatientList from '../../components/patient/AllPatientList.jsx';
 import Accordian from 'baxterAtoms/Accordian';
 import Button from 'baxterAtoms/Button';
