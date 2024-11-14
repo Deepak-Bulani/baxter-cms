@@ -1,5 +1,6 @@
 import React from 'react';
-import Input from '../formcomponent/Input.jsx';
+import Input from "baxterAtoms/Input"
+
 
 const UserInfo = () => {
   return (
