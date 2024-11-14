@@ -7,6 +7,9 @@ export default defineConfig({
     federation({
       name: "remotes",
       filename: "cmsEntry.js",
+      remotes: {
+        baxterAtoms: `http://localhost:3006/assets/atomicLibrary.js`,
+      },
       shared: ["react", "react-dom"],
     }),
     [svgr()],
