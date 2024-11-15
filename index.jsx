@@ -1,29 +1,32 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./src/components/Layout/Layout";
-import AddUser from "./src/components/user/AddUser";
-import ClinicalHome from "./src/components/clinical/ClinicalHome"
-import App from "./src/App"
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Layout from './src/components/Layout/Layout';
+import AddUser from './src/components/user/AddUser';
+import ClinicalHome from './src/components/clinical/ClinicalHome';
+import App from './src/App';
+import Patient from './src/components/patient';
+import './index.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Layout />,
     children: [
       {
-        path: "clinical",
+        path: 'clinical',
         element: <ClinicalHome />,
       },
       {
-        path: "adequest",
+        path: 'adequest',
         element: <AddUser />,
       },
       {
-        path: "app",
-        element: <App />,
-      }
+        path: 'app',
+        element: <Patient />,
+      },
     ],
   },
 ]);

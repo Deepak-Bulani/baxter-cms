@@ -1,7 +1,7 @@
 import React from 'react';
 import Accordian from 'baxterAtoms/Accordian';
 import Button from 'baxterAtoms/Button';
-import DataTable from 'baxterAtoms/DataTable';
+// import DataTable from 'baxterAtoms/DataTable';
 import UserCard from 'baxterAtoms/UserCard';
 import {columns, data} from '../../data/clinicalData.jsx';
 
@@ -33,7 +33,6 @@ const ClinicalHome = () => {
     },
   ];
 
-
   const tabs = [
     {name: 'Clinical', content: 'Content for Clinical'},
     {name: 'Patient', content: 'Content for Patient'},
@@ -52,9 +51,8 @@ const ClinicalHome = () => {
         focus:ring-2 btn middle rounded-[3px] duration-500 ease-in-out center font-medium text-white text-ellipsis shadow-md transition-all hover:shadow-lg border border-collapse border-x-2 border-y-4 border-green-800"
       />
       <Accordian tabs={tabs} />
-      <DataTable columns={columns} data={data} rowsPerPage={5} visiblePages={3} />
-      <UserCard  accountDetails={accountDetails}/>
-
+      {/* <Table columns={columns} data={data} rowsPerPage={5} visiblePages={3} /> */}
+      <UserCard accountDetails={accountDetails} />
     </>
   );
 };
