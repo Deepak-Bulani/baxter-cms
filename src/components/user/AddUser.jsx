@@ -2,8 +2,8 @@ import React from 'react';
 import UserInfo from './UserInfo.jsx';
 import PatientAccess from './PatientAccess.jsx';
 import SiteAccess from './SiteAccess.jsx';
-import Tabs from '../formcomponent/Tabs.jsx';
-import Accordion from '../formcomponent/Accordian.jsx';
+import Tabs from 'baxterAtoms/Tabs';
+
 
 const AddUser = () => {
   

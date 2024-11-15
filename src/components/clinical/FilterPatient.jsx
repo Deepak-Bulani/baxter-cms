@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Option from '../formcomponent/Option';
+import Option from "baxterAtoms/Option";
 
 const FilterPatient = () => {
   const [selectedValue, setSelectedValue] = useState('');
