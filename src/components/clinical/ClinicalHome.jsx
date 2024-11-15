@@ -1,5 +1,4 @@
 import React from 'react';
-import AllPatientList from '../../components/patient/AllPatientList.jsx';
 import Accordian from 'baxterAtoms/Accordian';
 import Button from 'baxterAtoms/Button';
 import DataTable from 'baxterAtoms/DataTable';
@@ -33,10 +32,7 @@ const ClinicalHome = () => {
       linkText: 'Change security question',
     },
   ];
-  const components = [
-    {text: 'All Patient', comp: <AllPatientList />},
-    {text: 'My Patient', comp: <AllPatientList />},
-  ];
+
 
   const tabs = [
     {name: 'Clinical', content: 'Content for Clinical'},

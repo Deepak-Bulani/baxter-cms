@@ -10,6 +10,9 @@ export default defineConfig({
       remotes: {
         baxterAtoms: `http://localhost:3006/assets/atomicLibrary.js`,
       },
+      exposes: {
+        "./Patient": "./src/components/patient/index.jsx",
+      },
       shared: ["react", "react-dom"],
     }),
     [svgr()],
