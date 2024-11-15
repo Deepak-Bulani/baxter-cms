@@ -1,11 +1,9 @@
-
-import React from "react";
-import { Outlet } from "react-router-dom";
-
+import React from 'react';
+import {Outlet} from 'react-router-dom';
 
 const Layout = () => (
   <>
-   <div className="grid justify-center"> 
+    <div>
       <Outlet />
     </div>
   </>
