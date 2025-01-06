@@ -1,18 +1,23 @@
 import {defineConfig} from 'vite';
 import federation from '@originjs/vite-plugin-federation';
 import svgr from 'vite-plugin-svgr';
-// https://vitejs.dev/config/
+
 export default defineConfig({
+
   plugins: [
     federation({
       name: 'remotes',
       filename: 'cmsEntry.js',
       remotes: {
-        baxterAtoms: `http://localhost:3006/dist/assets/atomicLibrary.js`,
+        baxterAtoms: `http://localhost:3006/dist/assets/atomicLibrary.js`, 
+        // baxterAtoms: 'http://localhost:3002/dist/assets/vueEntry.js', 
       },
-      exposes: {
+      exposes: {   
         './Patient': './src/components/patient/index.jsx',
       },
+      // exposes: {   
+      //   './Tidal': './src/components/Tidal.jsx',
+      // },
       shared: ['react', 'react-dom'],
     }),
     [svgr()],
@@ -30,5 +35,6 @@ export default defineConfig({
   },
   server: {
     port: 3001,
+    cors: true, // Enable CORS
   },
 });
